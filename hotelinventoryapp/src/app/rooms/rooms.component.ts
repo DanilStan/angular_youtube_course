@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './rooms.component.scss',
 })
 export class RoomsComponent implements OnInit {
-  hotelName = 'San-Francisco Hotel';
+  toggle = true;
 
   constructor() {}
+
+  onClick() {
+    this.toggle = !this.toggle;
+  }
 
   ngOnInit(): void {}
 }

@@ -1,1 +1,7 @@
-<p>This is {{ hotelName }}</p>
+<button type="button" (click)="onClick()">Click</button>
+<p class="red" *ngIf="toggle; else SecondP">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, ipsam?
+</p>
+<ng-template #SecondP>
+  <p class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</ng-template>
