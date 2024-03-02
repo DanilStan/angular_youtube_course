@@ -3,3 +3,12 @@
   padding: 10px;
   border: 2px solid gray;
 }
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}

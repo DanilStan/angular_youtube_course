@@ -25,6 +25,10 @@ export class AppComponent {
     },
   ];
 
+  onRemovePost(id: number) {
+    this.posts = this.posts.filter((post) => post.id !== id);
+  }
+
   onAddPost(post: Post) {
     this.posts.unshift(post);
   }
